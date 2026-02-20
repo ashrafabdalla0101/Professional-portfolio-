@@ -2,106 +2,105 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Professional Resume - Ashraf Abdalla</title>
+    <title>Modern Resume - Ashraf Abdalla</title>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
     <style>
-        :root { --sidebar-bg: #1e293b; --accent: #14b8a6; --text-light: #f1f5f9; }
-        body { font-family: 'Plus Jakarta Sans', sans-serif; background: #cbd5e1; margin: 0; padding: 20px; color: #334155; }
-        .resume-container { width: 900px; background: white; margin: auto; display: flex; min-height: 1100px; box-shadow: 0 20px 50px rgba(0,0,0,0.15); border-radius: 12px; overflow: hidden; }
+        :root { --sidebar: #1e293b; --teal: #14b8a6; --light: #f1f5f9; }
+        body { font-family: 'Plus Jakarta Sans', sans-serif; background: #e2e8f0; margin: 0; padding: 20px; color: #334155; }
+        .resume { width: 900px; background: white; margin: auto; display: flex; min-height: 1200px; box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25); border-radius: 12px; overflow: hidden; }
         
-        /* Sidebar Styles */
-        .sidebar { width: 35%; background: var(--sidebar-bg); color: var(--text-light); padding: 50px 30px; text-align: center; }
-        .profile-pic { width: 160px; height: 160px; border-radius: 50%; border: 4px solid var(--accent); margin-bottom: 25px; object-fit: cover; }
-        h1 { font-size: 20pt; font-weight: 800; margin: 10px 0; text-transform: uppercase; letter-spacing: 1px; }
-        .tagline { color: var(--accent); font-weight: 600; font-size: 10pt; margin-bottom: 40px; display: block; }
-        .sidebar-heading { text-align: left; font-size: 11pt; text-transform: uppercase; border-bottom: 1px solid #475569; padding-bottom: 5px; margin-top: 40px; color: var(--accent); letter-spacing: 1px; }
-        .sidebar-content { text-align: left; font-size: 9pt; margin-top: 15px; font-weight: 300; line-height: 1.8; }
+        .aside { width: 35%; background: var(--sidebar); color: var(--light); padding: 50px 30px; text-align: center; }
+        .photo { width: 160px; height: 160px; border-radius: 50%; border: 4px solid var(--teal); margin-bottom: 25px; object-fit: cover; background: #334155; }
+        h1 { font-size: 20pt; font-weight: 800; margin: 0; text-transform: uppercase; letter-spacing: 1px; line-height: 1.1; }
+        .role { color: var(--teal); font-weight: 600; font-size: 10pt; margin-top: 10px; display: block; text-transform: uppercase; }
+        
+        .side-head { text-align: left; font-size: 11pt; text-transform: uppercase; border-bottom: 1px solid #475569; padding-bottom: 5px; margin-top: 45px; color: var(--teal); letter-spacing: 1px; font-weight: 800; }
+        .side-info { text-align: left; font-size: 9pt; margin-top: 15px; font-weight: 300; line-height: 2; }
 
-        /* QR Code Styling */
-        .qr-wrapper { margin-top: 50px; background: white; padding: 12px; border-radius: 8px; display: inline-block; }
-        .qr-wrapper img { width: 110px; display: block; }
-        .qr-text { color: var(--sidebar-bg); font-size: 7pt; font-weight: 800; margin-top: 5px; display: block; }
+        .qr-card { margin-top: 60px; background: white; padding: 15px; border-radius: 12px; display: inline-block; box-shadow: 0 4px 10px rgba(0,0,0,0.3); }
+        .qr-card img { width: 110px; display: block; }
+        .qr-tag { color: var(--sidebar); font-size: 7.5pt; font-weight: 800; margin-top: 8px; display: block; }
 
-        /* Main Content Styles */
-        .main-content { width: 65%; padding: 50px; }
-        h2 { font-size: 16pt; color: var(--sidebar-bg); font-weight: 800; border-left: 6px solid var(--accent); padding-left: 15px; margin-top: 40px; margin-bottom: 20px; }
-        .obj-box { background: #f8fafc; padding: 20px; border-radius: 8px; font-style: italic; border-right: 4px solid var(--accent); margin-bottom: 30px; font-size: 10pt; }
-        .card { margin-bottom: 25px; }
-        .card-title { font-weight: 800; color: #0f172a; font-size: 11pt; }
-        .card-sub { color: var(--accent); font-size: 9pt; font-weight: 600; margin-bottom: 5px; }
-        .ref-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; font-size: 8.5pt; margin-top: 10px; }
-        .ref-item { background: #f1f5f9; padding: 10px; border-radius: 4px; }
+        .main { width: 65%; padding: 60px; }
+        h2 { font-size: 17pt; color: var(--sidebar); font-weight: 800; border-left: 6px solid var(--teal); padding-left: 15px; margin-top: 40px; margin-bottom: 20px; text-transform: uppercase; }
+        .obj { background: #f8fafc; padding: 25px; border-radius: 12px; font-style: italic; border-right: 4px solid var(--teal); margin-bottom: 35px; font-size: 10.5pt; color: #475569; }
+        
+        .xp-card { margin-bottom: 30px; position: relative; }
+        .xp-title { font-weight: 800; color: #0f172a; font-size: 12pt; }
+        .xp-meta { color: var(--teal); font-size: 9.5pt; font-weight: 600; margin-bottom: 8px; }
+        .badge { display: inline-block; background: var(--teal); color: white; padding: 2px 10px; border-radius: 50px; font-size: 8pt; margin-left: 10px; vertical-align: middle; }
+        
+        .ref-grid { display: grid; grid-template-columns: 1fr; gap: 10px; margin-top: 15px; }
+        .ref-item { background: #f1f5f9; padding: 12px; border-radius: 8px; font-size: 9pt; border-left: 3px solid var(--teal); }
     </style>
 </head>
 <body>
-    <div class="resume-container">
-        <aside class="sidebar">
-            <img src="file_00000000451071f5ba21d40ece4fbe74.jpg" class="profile-pic" alt="Ashraf Abdalla">
-            <h1>Ashraf Abdalla</h1>
-            <span class="tagline">CEO & Future Head Nurse</span>
+    <div class="resume">
+        <aside class="aside">
+            <img src="file_00000000451071f5ba21d40ece4fbe74.jpg" class="photo" alt="Ashraf Abdalla">
+            <h1>Ashraf<br>Abdalla</h1>
+            <span class="role">HTML Coder & Future Head Nurse</span>
 
-            <div class="sidebar-heading">Personal</div>
-            <div class="sidebar-content">
-                Born: 27 Dec 2007<br>
-                Nationality: Kenyan<br>
-                Religion: Catholic
-            </div>
-
-            <div class="sidebar-heading">Contact</div>
-            <div class="sidebar-content">
-                📍 Machakos, Kenya<br>
-                📞 +254785117163<br>
+            <div class="side-head">Contact</div>
+            <div class="side-info">
+                📍 Kyumbi, Machakos, Kenya<br>
+                📞 +254 785 117 163<br>
                 ✉️ ashrafabdalla2o7@gmail.com
             </div>
 
-            <div class="sidebar-heading">Languages</div>
-            <div class="sidebar-content">
-                • English (Fluent)<br>• Swahili (Fluent)<br>• French (Fluent)
+            <div class="side-head">Key Skills</div>
+            <div class="side-info">
+                • HTML Coding (Expert)<br>
+                • Counselling Psychology<br>
+                • Strategic Leadership<br>
+                • French / Swahili / English
             </div>
 
-            <div class="qr-wrapper">
+            <div class="qr-card">
                 <img src="IMG-20260219-WA0002(1).jpg" alt="Portfolio QR">
-                <span class="qr-text">SCAN FOR PORTFOLIO</span>
+                <span class="qr-tag">SCAN FOR PORTFOLIO</span>
             </div>
         </aside>
 
-        <main class="main-content">
-            <h2>Career Objective</h2>
-            <div class="obj-box">
-                Ambitious leader and CEO with a professional background in counselling psychology. Currently pursuing a transition into healthcare with the long-term goal of becoming a Head Nurse, utilizing strong organizational management and interpersonal skills.
+        <main class="main">
+            <h2>Career Milestones</h2>
+            <div class="xp-card">
+                <div class="xp-title">HTML Code Expert <span class="badge">LATEST</span></div>
+                <div class="xp-meta">Professional Achievement | Jan 2026</div>
+                <p style="font-size: 10pt;">Recognized expertise in advanced HTML architecture and modern web design standards.</p>
+            </div>
+            <div class="xp-card">
+                <div class="xp-title">Counselling Skills Certificate</div>
+                <div class="xp-meta">Professional Certification | July 2024</div>
+                <p style="font-size: 10pt;">Comprehensive training in psychological support, active listening, and mental health advocacy.</p>
             </div>
 
             <h2>Experience</h2>
-            <div class="card">
-                <div class="card-title">CEO & Founder</div>
-                <div class="card-sub">TriBridge Studios and Services | 2024 - Present</div>
-                <p style="font-size: 9.5pt;">Leading executive operations, service development, and team management for a multidisciplinary service provider.</p>
+            <div class="xp-card">
+                <div class="xp-title">Healthcare & Counselling Practice</div>
+                <div class="xp-meta">Independent Practice | 2024 — Present</div>
+                <p style="font-size: 10pt;">Providing peer counselling support, applying psychological guidance techniques, and developing practical healthcare knowledge in preparation for professional nursing leadership.</p>
             </div>
 
             <h2>Education</h2>
-            <div class="card">
-                <div class="card-title">Njoro Boys High School</div>
-                <div class="card-sub">KCSE Qualification | 2022 - 2025</div>
-                <p style="font-size: 9.5pt;">Grade: C+</p>
-            </div>
-            <div class="card">
-                <div class="card-title">Kipketer Primary School</div>
-                <div class="card-sub">KCPE Qualification | 2014 - 2021</div>
-                <p style="font-size: 9.5pt;">Score: 366/500 (B+)</p>
+            <div class="xp-card">
+                <div class="xp-title">Njoro Boys High School</div>
+                <div class="xp-meta">KCSE Qualification | 2022 — 2025 | Grade: C+</div>
             </div>
 
-            <h2>Professional Referees</h2>
+            <h2>Referees</h2>
             <div class="ref-grid">
                 <div class="ref-item">
-                    <strong>Elizabeth Wanyoike</strong><br>
-                    School Counsellor<br>0754683495
+                    <strong>Elizabeth Wanyoike</strong><br>School Counsellor | 0754683495
                 </div>
                 <div class="ref-item">
-                    <strong>Jackob Haywood Ondiko</strong><br>
-                    French Mentor<br>0712062375
+                    <strong>Jackob Haywood Ondiko</strong><br>French Mentor | 0712062375
+                </div>
+                <div class="ref-item">
+                    <strong>Mogaka Stephen</strong><br>Class Teacher | 0723229142
                 </div>
             </div>
         </main>
     </div>
 </body>
-</html>
+    </html>
