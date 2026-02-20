@@ -2,85 +2,75 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Resume - Madhav Somani</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern CV - Ashraf Abdalla</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.4; color: #333; max-width: 850px; margin: 20px auto; padding: 30px; border: 1px solid #eee; }
-        .header { text-align: center; border-bottom: 2px solid #0078d4; padding-bottom: 10px; }
-        h1 { margin: 0; color: #0078d4; }
-        .contact { font-size: 0.9em; margin: 5px 0; }
-        h2 { border-bottom: 1px solid #ccc; color: #0078d4; text-transform: uppercase; font-size: 1.1em; margin-top: 20px; }
-        .job { margin-bottom: 15px; }
-        .job-header { display: flex; justify-content: space-between; font-weight: bold; }
-        .skills-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
-        ul { margin-top: 5px; padding-left: 20px; }
+        body { font-family: 'Poppins', sans-serif; margin: 0; background: #eef2f3; color: #333; }
+        .wrapper { max-width: 1000px; margin: 40px auto; display: flex; background: #fff; box-shadow: 0 0 50px rgba(0,0,0,0.2); overflow: hidden; border-radius: 8px; }
+        .sidebar { width: 35%; background: linear-gradient(135deg, #1abc9c, #2c3e50); color: white; padding: 40px 30px; }
+        .main { width: 65%; padding: 40px; }
+        .sidebar h2 { font-family: 'Playfair Display', serif; border-bottom: 2px solid rgba(255,255,255,0.2); padding-bottom: 10px; margin-top: 30px; }
+        .main h2 { font-family: 'Playfair Display', serif; color: #1abc9c; border-bottom: 2px solid #eee; padding-bottom: 10px; margin-top: 30px; }
+        h1 { font-family: 'Playfair Display', serif; font-size: 2.8em; margin: 0; line-height: 1; }
+        .objective { font-style: italic; color: #666; margin-top: 5px; }
+        .contact-item { margin-bottom: 15px; font-size: 0.9em; }
+        .skill-tag { display: inline-block; background: rgba(255,255,255,0.1); padding: 5px 12px; border-radius: 20px; margin: 3px; font-size: 0.85em; }
+        .job-title { font-weight: 600; color: #2c3e50; font-size: 1.1em; }
+        .date-loc { font-size: 0.85em; color: #1abc9c; font-weight: 600; margin-bottom: 10px; }
+        ul { padding-left: 20px; font-size: 0.95em; }
     </style>
 </head>
 <body>
+    <div class="wrapper">
+        <aside class="sidebar">
+            <h1>Ashraf Abdalla</h1>
+            <p class="objective">Future Head Nurse</p>
+            
+            <h2>Contact</h2>
+            <div class="contact-item">📍 Kyumbi, Machakos, Kenya</div>
+            <div class="contact-item">📞 +254785117163</div>
+            <div class="contact-item">✉️ ashrafabdalla2o7@gmail.com</div>
 
-    <div class="header">
-        <h1>MADHAV SOMANI </h1>
-        <p class="contact">
-            Seattle [cite: 5] | +1-313-502-3043 [cite: 6] | madhavsomani007@gmail.com [cite: 7]<br>
-            linkedin.com/in/madhavsomani [cite: 8] | Github.com/madhavsomani007 [cite: 9]
-        </p>
+            <h2>Skills</h2>
+            <span class="skill-tag">Leadership</span>
+            <span class="skill-tag">Counselling</span>
+            <span class="skill-tag">Management</span>
+            <span class="skill-tag">Cooking</span>
+            <span class="skill-tag">Public Speaking</span>
+
+            <h2>Languages</h2>
+            <p>English, Swahili, French</p>
+
+            <h2>Hobbies</h2>
+            <p>Nature walking, Music, Cooking</p>
+        </aside>
+
+        <main class="main">
+            <h2>Experience</h2>
+            <div class="job-title">CEO & Founder</div>
+            <div class="date-loc">TriBridge Studios and Services | 2024 - Present</div>
+            <ul>
+                <li>Strategic leadership and organizational management.</li>
+                <li>Pioneering service development and executive operations.</li>
+            </ul>
+
+            <h2>Education</h2>
+            <div class="job-title">Njoro Boys High School</div>
+            <div class="date-loc">KCSE Qualification | 2022 - 2025</div>
+            <p>Grade Achieved: C+</p>
+
+            <div class="job-title">Kipketer Primary School</div>
+            <div class="date-loc">KCPE Qualification | 2014 - 2021</div>
+            <p>Score: 366/500 (B+)</p>
+
+            <h2>Certifications</h2>
+            <p><strong>Counselling Psychology Certificate</strong><br>Issued July 2024</p>
+
+            <h2>Referees</h2>
+            <p><strong>Elizabeth Wanyoike</strong><br>School Counsellor | 0754683495</p>
+            <p><strong>Jackob Haywood Ondiko</strong><br>French Mentor | 0712062375</p>
+        </main>
     </div>
-
-    <h2>Summary</h2>
-    <p>Ambitious developer specializing in AI/LLM/RAG and Network management[cite: 11]. Lead engineer on Azure Network Copilot with expertise in C#, Cosmos DB, and distributed systems[cite: 12]. Focus on reliability, security, and cost efficiency[cite: 14].</p>
-
-    <h2>Professional Experience</h2>
-    
-    <div class="job">
-        <div class="job-header">
-            <span>Microsoft — Senior Software Engineer [cite: 16, 17]</span>
-            <span>09/2021-Present [cite: 18]</span>
-        </div>
-        <ul>
-            <li>Lead and built Azure Network Copilot using LLM/RAG for network diagnosis[cite: 19].</li>
-            <li>Built C# microservices integrating Azure Resource Graph and Kusto[cite: 19].</li>
-            <li>Optimized Cosmos DB with smart partitioning and indexes[cite: 20].</li>
-        </ul>
-    </div>
-
-    <div class="job">
-        <div class="job-header">
-            <span>Visa Inc — Senior Software Engineer [cite: 22, 23]</span>
-            <span>07/2019-09/2021 [cite: 24]</span>
-        </div>
-        <ul>
-            <li>Designed system modules using React, Groovy, GO, and Java[cite: 25].</li>
-            <li>Worked on SOLR and Apache Cassandra to maintain database efficiency[cite: 25].</li>
-        </ul>
-    </div>
-
-    <h2>Education</h2>
-    <div class="job">
-        <div class="job-header">
-            <span>The University of Texas at Arlington [cite: 45]</span>
-            <span>08/2017-05/2019 [cite: 44]</span>
-        </div>
-        <p>Master of Science: Computer Science | GPA 3.5/4.0 [cite: 45]</p>
-    </div>
-    <div class="job">
-        <div class="job-header">
-            <span>St. Vincent Pallotti College of Engineering [cite: 50]</span>
-            <span>07/2013-07/2017 [cite: 48]</span>
-        </div>
-        <p>Bachelor of Science: Computer Engineering | GPA 3.8/4.0 [cite: 47, 53]</p>
-    </div>
-
-    <h2>Core Skills</h2>
-    <div class="skills-grid">
-        <div><strong>Backend:</strong> AI/LLM/RAG [cite: 51], JAVA/C/C++ [cite: 49], C# [cite: 59], SQL/Azure [cite: 67]</div>
-        <div><strong>Frontend:</strong> React/AngularJS [cite: 57], HTML/CSS [cite: 56], Android [cite: 61]</div>
-    </div>
-
-    <h2>Certifications & Accomplishments</h2>
-    <ul>
-        <li>Certified Cyber Security Expert & Ethical Hacker[cite: 69, 72].</li>
-        <li>Guest lectured on Artificial Intelligence at the University of Washington (2025)[cite: 74].</li>
-        <li>First position in National level HACKATHON (2015-2017)[cite: 76].</li>
-    </ul>
-
 </body>
-</html>
+                </html>
