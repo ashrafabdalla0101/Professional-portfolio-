@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Modern Resume - Ashraf Abdalla</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <style>
+        :root { --sidebar: #1e293b; --teal: #14b8a6; --light: #f1f5f9; }
+        body { font-family: 'Plus Jakarta Sans', sans-serif; background: #e2e8f0; margin: 0; padding: 20px; color: #334155; }
+        .resume { width: 900px; background: white; margin: auto; display: flex; min-height: 1200px; box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25); border-radius: 12px; overflow: hidden; }
+        
+        .aside { width: 35%; background: var(--sidebar); color: var(--light); padding: 50px 30px; text-align: center; }
+        .photo { width: 160px; height: 160px; border-radius: 50%; border: 4px solid var(--teal); margin-bottom: 25px; object-fit: cover; background: #334155; }
+        h1 { font-size: 20pt; font-weight: 800; margin: 0; text-transform: uppercase; letter-spacing: 1px; line-height: 1.1; }
+        .role { color: var(--teal); font-weight: 600; font-size: 10pt; margin-top: 10px; display: block; text-transform: uppercase; }
+        
+        .side-head { text-align: left; font-size: 11pt; text-transform: uppercase; border-bottom: 1px solid #475569; padding-bottom: 5px; margin-top: 35px; color: var(--teal); letter-spacing: 1px; font-weight: 800; }
+        .side-info { text-align: left; font-size: 9pt; margin-top: 15px; font-weight: 300; line-height: 2; }
+
+        .qr-card { margin-top: 40px; background: white; padding: 15px; border-radius: 12px; display: inline-block; box-shadow: 0 4px 10px rgba(0,0,0,0.3); }
+        .qr-card img { width: 110px; display: block; }
+        .qr-tag { color: var(--sidebar); font-size: 7.5pt; font-weight: 800; margin-top: 8px; display: block; }
+
+        .main { width: 65%; padding: 50px 60px; }
+        h2 { font-size: 13pt; color: var(--sidebar); font-weight: 800; border-left: 6px solid var(--teal); padding-left: 15px; margin-top: 35px; margin-bottom: 15px; text-transform: uppercase; }
+        .obj { background: #f8fafc; padding: 20px 25px; border-radius: 12px; font-style: italic; border-right: 4px solid var(--teal); margin-bottom: 30px; font-size: 10pt; color: #475569; line-height: 1.7; }
+        
+        .xp-card { margin-bottom: 22px; position: relative; }
+        .xp-title { font-weight: 800; color: #0f172a; font-size: 11.5pt; }
+        .xp-meta { color: var(--teal); font-size: 9.5pt; font-weight: 600; margin-bottom: 6px; }
+        .badge { display: inline-block; background: var(--teal); color: white; padding: 2px 10px; border-radius: 50px; font-size: 8pt; margin-left: 10px; vertical-align: middle; }
+        
+        .skills-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 5px; }
+        .skill-item { background: #f1f5f9; padding: 10px 14px; border-radius: 8px; font-size: 9pt; border-left: 3px solid var(--teal); }
+        .skill-item strong { display: block; color: #0f172a; margin-bottom: 3px; font-size: 9.5pt; }
+
+        ul.xp-list { margin: 6px 0 0 0; padding-left: 18px; font-size: 9.5pt; line-height: 1.8; color: #475569; }
+
+        .ref-grid { display: grid; grid-template-columns: 1fr; gap: 10px; margin-top: 15px; }
+        .ref-item { background: #f1f5f9; padding: 12px; border-radius: 8px; font-size: 9pt; border-left: 3px solid var(--teal); }
+    </style>
+</head>
+<body>
+    <div class="resume">
+        <aside class="aside">
+            <img src="file_00000000451071f5ba21d40ece4fbe74.jpg" class="photo" alt="Ashraf Abdalla">
+            <h1>Ashraf<br>Abdalla</h1>
+            <span class="role">Sales & Digital Professional</span>
+
+            <div class="side-head">Contact</div>
+            <div class="side-info">
+                📍 Dagoretti, Nairobi, Kenya<br>
+                📞 +254 785 117 163<br>
+                ✉️ ashrafabdalla0101@gmail.com
+            </div>
+
+            <div class="side-head">Key Skills</div>
+            <div class="side-info">
+                • Digital Sales & Social Media<br>
+                • HTML Development<br>
+                • Multilingual: English, Kiswahili, French<br>
+                • Persuasive Negotiation<br>
+                • Showroom Etiquette<br>
+                • Conflict Resolution
+            </div>
+
+            <div class="side-head">Highlights</div>
+            <div class="side-info">
+                📱 1,700+ Online Followers<br>
+                🐔 Poultry Entrepreneur<br>
+                🌐 TriBridge Services Founder<br>
+                🎯 Counselling Skills Certified
+            </div>
+
+            <div class="qr-card">
+                <img src="IMG-20260219-WA0002(1).jpg" alt="Portfolio QR">
+                <span class="qr-tag">SCAN FOR PORTFOLIO</span>
+            </div>
+        </aside>
+
+        <main class="main">
+            <h2>Professional Summary</h2>
+            <div class="obj">
+                Energetic and tech-savvy professional with a background in web development (HTML) and digital content management. Proven ability to build and engage an online audience of 1,700+ followers. Possesses strong multilingual communication skills and a results-driven mindset, seeking to drive sales and excellence at Bed Palace Kenya.
+            </div>
+
+            <h2>Key Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-item">
+                    <strong>Digital Sales</strong>
+                    Social media management, lead conversion, and online customer engagement.
+                </div>
+                <div class="skill-item">
+                    <strong>Communication</strong>
+                    Fluent in English & Kiswahili; Proficient in French (B- Grade).
+                </div>
+                <div class="skill-item">
+                    <strong>Technical</strong>
+                    Basic HTML development and digital troubleshooting.
+                </div>
+                <div class="skill-item">
+                    <strong>Soft Skills</strong>
+                    Persuasive negotiation, showroom etiquette, and conflict resolution.
+                </div>
+            </div>
+
+            <h2>Experience</h2>
+            <div class="xp-card">
+                <div class="xp-title">Independent Contractor <span class="badge">CURRENT</span></div>
+                <div class="xp-meta">Service-Oriented Roles | 2025 — Present</div>
+                <ul class="xp-list">
+                    <li>Demonstrated strong work ethic and physical stamina in various service-oriented roles.</li>
+                </ul>
+            </div>
+            <div class="xp-card">
+                <div class="xp-title">Founder — TriBridge Services</div>
+                <div class="xp-meta">Entrepreneurship | 2024 — 2025</div>
+                <ul class="xp-list">
+                    <li>Managed business operations and experimented with digital service delivery and brand building.</li>
+                </ul>
+            </div>
+            <div class="xp-card">
+                <div class="xp-title">Entrepreneur — Poultry Enterprise</div>
+                <div class="xp-meta">Agriculture & Sales | 2023 — 2024</div>
+                <ul class="xp-list">
+                    <li>Oversaw management and sales of improved Kienyeji chicken, gaining direct experience in local market sales and inventory management.</li>
+                </ul>
+            </div>
+
+            <h2>Education</h2>
+            <div class="xp-card">
+                <div class="xp-title">Kenya Certificate of Secondary Education (KCSE)</div>
+                <div class="xp-meta">Njoro Boys High School | 2022 — 2025</div>
+                <ul class="xp-list">
+                    <li>Aggregate Grade: <strong>C+</strong></li>
+                    <li>English: <strong>B+</strong> &nbsp;|&nbsp; French: <strong>B-</strong></li>
+                </ul>
+            </div>
+            <div class="xp-card">
+                <div class="xp-title">Counselling Skills Certificate</div>
+                <div class="xp-meta">Professional Certification | July 2024</div>
+                <ul class="xp-list">
+                    <li>Comprehensive training in psychological support, active listening, and mental health advocacy.</li>
+                </ul>
+            </div>
+
+            <h2>Referees</h2>
+            <div class="ref-grid">
+                <div class="ref-item">
+                    <strong>Elizabeth Wanyoike</strong><br>School Counsellor | 0754683495
+                </div>
+                <div class="ref-item">
+                    <strong>Jackob Haywood Ondiko</strong><br>French Mentor | 0712062375
+                </div>
+                <div class="ref-item">
+                    <strong>Mogaka Stephen</strong><br>Class Teacher | 0723229142
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
